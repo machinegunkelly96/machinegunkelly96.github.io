@@ -10,3 +10,45 @@ p {
 a {
   color: inherit;
 }
+
+header {
+  width: 100%;
+  height: 5em;
+  background-color: #00a2e8;
+}
+
+#header-title {
+  float: left;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+#header-icon {
+  float: right;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  width: 4em;
+  height: 4em;
+}
+
+nav {
+  font-size: 3em;
+}
+
+article {
+  float: left;
+  width: 100%;
+  height: 20em;
+}
+
+section {
+  float: left;
+  height: 5em;
+  width: 10em;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  height: 10%;
+}
