@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: inherit;
+}
