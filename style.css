@@ -1,10 +1,5 @@
 body {
-  background-color: black;
-  color: white;
-}
-
-p {
-  color: white;
+  background-image: url('img/thor.jpg');
 }
 
 a {
@@ -14,7 +9,7 @@ a {
 header {
   width: 100%;
   height: 5em;
-  background-color: #00a2e8;
+  background-color: white;
 }
 
 #header-title {
@@ -25,30 +20,43 @@ header {
 
 #header-icon {
   float: right;
-  padding: 0.5em;
   margin-right: 0.5em;
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 5em;
 }
 
 nav {
   font-size: 3em;
+  color: white;
+  text-align: center;
 }
 
 article {
-  float: left;
-  width: 100%;
-  height: 20em;
+  margin: 5em;
+  padding: 1em;
+  background-color: white;
 }
 
-section {
-  float: left;
-  height: 5em;
-  width: 10em;
+iframe {
+  padding: 1em;
+  margin-left: 25em;
+  border: none;
 }
 
-footer {
-  float: left;
-  width: 100%;
-  height: 10%;
+#yggdrasil {
+  padding: 1em;
+  margin-left: 25em;
+}
+
+blockquote {
+  background-color: grey;
+  text-align: justify;
+  color: white;
+  font-size: 1.5em;
+  width: 20em;
+  padding: 1em;
+}
+
+#quote-cite {
+  text-align: right;
 }
