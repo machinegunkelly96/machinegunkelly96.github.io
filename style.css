@@ -41,6 +41,7 @@ iframe {
   padding: 1em;
   margin-left: 25em;
   border: none;
+  position: relative;
 }
 
 #yggdrasil {
