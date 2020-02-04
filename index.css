@@ -1,0 +1,60 @@
+/*
+
+    Index.html CSS
+    Written by Simone Ferrari
+
+*/
+body {
+  background-image: url('img/ragnarok.jpg');
+}
+
+/* Carosello */
+#carousel-box {
+  margin-top: 5em;
+}
+
+.carousel {
+  width: inherit;
+}
+
+.carousel-img {
+  height: 40em;
+}
+
+.carousel-caption {
+  background-color: black;
+  color: white;
+}
+
+/* Scheda principale */
+#article {
+  margin-top: 10em;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: white;
+}
+
+iframe {
+  padding: 1em;
+  width: 50%;
+  display: block;
+  margin: auto;
+  border: none;
+}
+
+#yggdrasil {
+  padding: 1em;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+blockquote {
+  background-color: grey;
+  color: white;
+  font-size: 1.5em;
+}
+
+#quote-cite {
+  text-align: right;
+}
