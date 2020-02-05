@@ -1,0 +1,18 @@
+body {
+  background-image: url('img/ragnarok.jpg');
+}
+
+.main {
+  margin-top: 10em;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: white;
+}
+
+.img-card {
+  height: 297px;
+}
+
+.story {
+  margin-top: 5em;
+}
