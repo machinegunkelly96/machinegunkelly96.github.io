@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Asgard</title>
-
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="fairytale.css">
   </head>
@@ -46,22 +43,22 @@
 
     <div class="container main" id="main">
       <p>Ecco qui una raccolta dei principali e più bei racconti provenienti dalla mitologia norrena</p>
-
       <div class="card-deck">
         <div class="card">
           <img src="img/mimir.png" class="card-img-top img-card" alt="">
           <div class="card-body">
             <h5 class="card-title">La testa di Mimir</h5>
             <p class="card-text ">Odino,travestito da vagabondo, attraversa la terra dei giganti per andare da Mimir in cerca di saggezza.</p>
-            <button class="btn btn-primary" onclick="read()">Leggi</button>
+            <button class="btn btn-primary" onclick="read(1)">Leggi</button>
+
           </div>
         </div>
         <div class="card">
           <img src="img/mjolnir.jpg" class="card-img-top img-card" alt="">
           <div class="card-body">
             <h5 class="card-title">I tesori degli Dei</h5>
-            <p class="card-text ">Thor ottiene il suo famoso martello,Mjolnir,in una bizzara storia con protagonista Loki.</p>
-            <button class="btn btn-primary">Leggi</button>
+            <p class="card-text ">Gli Dei ottengono diversi tesori,tra cui il martello di Thor,Mjolnir, in una bizzara storia con protagonista Loki.</p>
+            <button class="btn btn-primary" onclick="read(2)">Leggi</button>
           </div>
         </div>
         <div class="card">
@@ -69,17 +66,160 @@
           <div class="card-body">
             <h5 class="card-title">I Figli di Loki</h5>
             <p class="card-text ">La storia dei tre strani figli di Loki : Fenrir il lupo, Jormungundr il serpente del mondo ed Hel,la bambina che amava i morti.</p>
-            <button class="btn btn-primary">Leggi</button>
+            <button class="btn btn-primary" onclick="read(3)">Leggi</button>
           </div>
         </div>
       </div>
 
+      <div class="container d-block" id="story-container">
+        <button class="btn btn-secondary" onclick="close1()">Chiudi</button>
+      </div>
 
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="fairytale.js"> </script>
+      <div class="container d-none" id="hidden-container">
+        <p class="text-left" id="story1">
+          A Jotunheim,dove vivono i giganti,c'è la fonte di Mimir.Sgorga dalle profondità del terreno,e nutre Yggdrasil,l'albero-mondo.Mimir,il saggio,il guardiano
+          della memoria,sa molte cose.La sua fonte dà la saggezza,e quando il monmdo era giovane lui ogni mattina immergeva nella fonte il corno detto il Gjallerhorn
+          e raccoglieva un sorso di quell'acqua per berla.<br>
+          Tanto,tanto tempo fa,quando i mondi erano giovani,Odino indossò il su o lngo mantello e il cappello,e travestito da vagabondo attraversò la terra
+          dei giganti,rischiando la vita,per andare da Mimir in cerca di saggezza.<br>
+          "Fammi bere una volta l'acqua della tua fonte,zio Mimir" disse Odino."É tutto quello che ti chiedo."<br>
+          Mimir scosse la testa.nessuno beveva quell'acqua,tranne lui.Non disse niente:di rado chi tace sbaglia.<br>
+          "Io sono tuo nipote" disse Odino."Mia madre,Bestla, era tua sorella."<br>
+          "Non basta" disse Mimir.<br>
+          "Un sorso.Un sorso dalla tua fonte,Mimir,e diventerò saggio.Pagherò qualunque prezzo."<br>
+          "Un occhio è il prezzo" disse Mimir."Il tuo occhio nella fonte."<br>
+          Odino non gli chiese se stesse scherzando.Il viaggio attraverso la terra dei giganti per arrivare alla fonte di Mimir era stato lungo e pericoloso.Odino
+          aveva rischiato al vita volentieri pur di arrivari lì.Era disposto a fare ben altro per ottenere la saggezza.<br>
+          L'epressione di Odino era determinata.<br>
+          "Dammi un coltello" disse soltanto.<br>
+          Dopo aver fatto ciò che bisognava fare,dpose con cura l'occhio nella fonte.L'occhio lo fissava atrtaverso l'acqua.Odino colmò il Gjallerhorn con l'acqua
+          della fonte di Mimir,e se lo portò alle labbra.L'acqua era fredda.Lui la mandò giù d'un fiato.La saggezza lo inondò.Con l'unico occhio rimasto vide più
+          lontano e più chiaramente di quanto avesse mai visto con due.<br>
+          Da quel giorno Odino ebbe anche altri nomi : Blindr,lo chiamarono,il dio cieco,e Hoarr,l'orbo,e Baleyg,dall'occhio di brace.<br>
+          L'occhio di Odino rimase nella fonte di Mimir,conservato dalle acque che nutrono il frassino cosmico,non vedendo niente,vedendo tutto.<br>
+          Il tempo passò.Quando la guerra fra gli Aesir e i Vanir volse al termine e ci fu uno scambio di guerrieri e condottieri,Odino mandò Mimir dai Vanmir come
+          consigliere di un dio aesir,Hoenir,che sarebbe diventato il nuovo capo dei Vanir.<br>
+          Hoenir era alto e bello,con l'aspetto di un re.Quando Mimir era accando a lui a consigliarlo,Hoenir parlava anche,come un re,e prendeva decisioni sagge.Ma
+          quando Mimir non era con lui,Hoenir sembrva incapace di decidere,e i Vanir ben presto si stufarono di questa cosa.Non si vendicarono su Hoenir ma su
+          Mimir : gli tagliarono al testa e la mandarono a Odino.<br>
+          Odino non si arrabbiò.Sfregò la testa di Mimir con certe erba per impedirla di decomporsi,e intonò canti e litanie,perchè non voleva che la sapienza di Mimir
+          andasse perduta.E poco dopo Mimir aprì gli occhi e gli parlò.Il consiglio che gli diede fu buono,perchè erano sempre buoni.<br>
+          Odino riportò la testa alla fonte,e la mise lì,accanto al sio occhio,nelle acqua della conoscenza del futuro e del passato.<br>
+          Odino diede il Gjallerhorn a Heimdall,guardianoo degli dei.Il giorno in cui il Gjallerhorn risuonerà,sveglierà gli dei,ovunque si trovino,per quanto
+          profondamente dormano.<br>
+          Heimdall suonerà il Gjallerhorn soltanto una volta,alla fine di tutte le cose,a Ragnarok.<br>
+        </p>
+        <p class="text-left" id="story2">
+          Un giorno, per scherzo o per cattiveria, Loki figlio di Laufey tagliò tutti i capelli a Sif.
+          Quando Þórr si avvide del dispetto, agguantò Loki e gli avrebbe fracassato tutte le ossa,
+          se questi non gli avesse promesso che sarebbe subito andato dagli Svartálfar, e si sarebbe fatto forgiare per Sif una chioma d'oro.
+          Questa è la ragione per cui, ancora oggi, i poeti definiscono l'oro «chioma di Sif».
+          Andò allora Loki da quei dvergar detti Ívaldasynir, cioè figli di Ívaldi, ed essi forgiarono tre meravigliosi tesori. Il primo
+          era una chioma d'oro, che si sarebbe attaccata alla pelle non appena posta sul capo di Sif e che era in grado di crescere come tutti gli altri capelli.
+          Il secondo era la nave Skíðblaðnir, le cui vele, una volta spiegate, venivano subito colmate da una brezza che la spingeva lungo qualsiasi
+          rotta la si volesse dirigere; inoltre, volendo, la nave poteva essere piegata come una tovaglia e riposta in una borsa. Il terzo tesoro
+          era una lancia, Gungnir, che colpiva sempre il bersaglio quando la si lanciava.
+          In seguito, Loki, vantando i tre tesori forgiati dai figli di Ívaldi, scommise la testa con un dvergr di nome Brokkr che il fratello di questi, Eitri,
+          non avrebbe saputo costruire tre oggetti di pari valore.
+          Giunto nell'officina, Eitri gettò nella fucina una pelle di porco e ordinò a Brokkr di soffiare ininterrottamente con il mantice finché
+          non gli avesse ordinato di smettere. Eitri si era appena allontanato, che un tafano si posò sulla mano di Brokkr, pungendolo.
+          Ma ligio agli ordini del fratello, Brokkr non si fermò un istante e continuò a far vento finché non giunse Eitri a tirare fuori dalla fucina un meraviglioso
+          verro dalle setole d'oro.
+          Subito dopo, Eitri infilò della fornace dell'oro e diede al fratello il medesimo compito. Brokkr iniziò a maneggiare il mantice, e non smise
+          nemmeno quando il tafano arrivò a pungergli il collo, dolorosamente. Soffiò senza smettere un momento fin quando Eitri non tolse dalla fornace
+          un meraviglioso anello d'oro.
+          Infine, Eitri introdusse nella fornace del ferro e, ancora una volta, raccomandò a Brokkr di soffiare con il mantice. Il lavoro
+          sarebbe stato del tutto inutile, disse, se si fosse fermato anche per un istante. Brokkr si mise al lavoro, ma questa volta il tafano
+          gli si posò in mezzo agli occhi e lo punse con tanta ferocia che il sangue gli colò sulla faccia. Non vedendo più nulla, Brokkr lasciò
+          il mantice e cercò di catturare la mosca. Al suo arrivo, Eitri ebbe paura che il lavoro fosse ormai rovinato. Tolse dalla fucina
+          un martello e notò, con disappunto, che il manico era troppo corto.
+          Diede tuttavia gli oggetti a Brokkr e gli disse di andare a sciogliere la scommessa.
+          Gli Æsir sedettero sui seggi del consiglio per giudicare quali oggetti fossero più preziosi, se quelli forgiati dagli Ívaldasynir, o quelli recati da Brokkr.
+          Loki, per primo, presentò i tesori commissionati agli Ívaldasynir. Diede a Sif la chioma d'oro, a Freyr la nave Skíðblaðnir, e a Óðinn la lancia Gungnir,
+          illustrando le virtù di ciascun oggetto.
+          Poi Brokkr presentò i suoi doni. Diede a Óðinn l'anello Draupnir, dicendo che ogni nove notti ne sarebbero scaturiti otto anelli di
+          uguale peso. A Freyr regalò il porco Gullinbursti, spiegando che che poteva correre tanto nell'aria quanto nell'acqua, sia di notte che di giorno, come qualsiasi
+          destriero. Inoltre, aggiunse, nessuna notte era tanto profonda, nessun luogo tanto buio e oscuro, che non venisse illuminato a giorno dalle sue
+          setole d'oro. Infine, porse a Þórr il martello Mjǫllnir, spiegandogli che con quello avrebbe potuto colpire qualsiasi avversario con quanta forza
+          avesse voluto, senza che il martello si danneggiasse o si rompesse. Inoltre, disse, se lo avesse scagliarlo contro un nemico,
+          non lo avrebbe mai perduto: Mjǫllnir aveva infatti la virtù di ritornargli in mano, per quanto lontano poteva lanciarlo. Volendo, poteva anche
+          rimpicciolire quel martello a tal punto da infilarlo nello scollo della camicia.
+          — L'unico difetto, — concluse, — è che ha il manico un po' corto.
+          Gli Æsir, dopo aver riflettuto, dissero che proprio il martello Mjǫllnir era il migliore di tutti i tesori, in quanto avrebbe loro permesso di difendersi
+          dagli jǫtnar e dagli altri giganti. Così stabilirono che Brokkr aveva vinto la scommessa.
+          Subito, Loki si offrì di riscattare la testa. Ma il dvergr rispose che questo non era nei patti.
+          — Prendimi, allora! — gridò Loki, e fuggì lontano. Calzava infatti un paio di scarpe che gli permettevano di correre anche nell'aria e sull'acqua. Brokkr
+          chiese a Þórr di catturarlo, e questi gli riportò Loki senza perdere un momento.
+          Allora Brokkr si fece avanti, deciso a troncare il capo di Loki, ma Loki ribatté che aveva impegnato solo la testa: il collo non faceva parte
+          dell'accordo. Esasperato, il nano decise allora di cucirgli la bocca. Afferrò un coltello per forargli le labbra, ma la lama non riusciva
+          a incidere la carne. Allora Brokkr evocò la lesina di suo fratello Eitri e subito lo strumento gli comparve in mano. Con quello poté praticare i fori
+          nelle labbra di Loki. Fatto questo, Brokkr cucì la bocca dell'áss con una speciale correggia chiamata Vartari.
+          In seguito, tuttavia, Loki strappò i punti.
+        </p>
+        <p class="text-left" id="story3">
+          Una gigantessa viveva in Jǫtunheimr: il suo nome era Angrboða. Loki trovò il suo cuore, mezzo arrostito, tra le ceneri, e lo divorò. Ne fu reso
+          gravido e, quando giunse il suo tempo, partorì tre figli. Il primo era un lupo e fu chiamato Fenrir. Il secondo era un serpente, ed ebbe nome Jǫrmungandr.
+          La terza, una fanciulla, aveva il volto metà fresco e roseo, metà livido e avvizzito. Le fu messo nome Hel.
+          Ma quando gli Æsir seppero di questi tre mostruosi figli che venivano allevati nello Jǫtunheimr, tirarono le sorti, e le profezie
+          annunciarono che da essi sarebbero giunti soltanto sventure e dolore. Parve evidente che una così mostruosa progenie annunciasse grandi mali, vista la
+          natura della loro madre, e soprattutto del loro padre.
+          Allora Óðinn mandò gli dèi nello Jǫtunheimr a prendere i tre fratelli, e li fece condurre presso di sé. Quando tale tremenda figliolanza
+          fu giunta al suo cospetto, egli preso per primo il serpente e lo gettò nell'úthaf, l'oceano esterno che avvolge tutte le terre. Ma le gelide acque ebbero
+          su Jǫrmungandr di esso un effetto vivificante, e il serpente crebbe così tanto che finì col circondare il mondo intero e, trovata davanti a sé la
+          propria coda, la serrò tra le fauci, cingendo le terre in un enorme circolo vivente. Ed esso fu chiamato Miðgarðsormr, il «serpente di Miðgarðr».
+          Poi Óðinn rivolse la sua attenzione ad Hel. La gettò nel Niflheimr e le permise di edificare laggiù la cupa dimora di Éljúðnir. Le diede potere sui nove
+          mondi in modo che diventasse la signora di tutti coloro che morivano di malattia o di vecchiaia. Hel divenne la dea dei defunti.
+          In quanto a Fenrir, le profezie lo dicevano destinato a provocare in futuro gravi sventure e, addirittura, che sarebbe divenuto l'uccisore di Óðinn. Ma gli dèi
+          avevano tale rispetto per le loro dimore e i loro santuari, che mai avrebbero voluto macchiarle col sangue del lupo. Così salvarono la vita a Fenrir e
+          permisero che venisse allevato nell'Ásgarðr.
+          Ma crescendo, il lupo Fenrir divenne una belva enorme e feroce, tanto che solo Týr aveva il coraggio di avvicinarsi per porgergli il cibo. Gli Æsir
+          cominciarono ad averne paura, ben conoscendo le tremende profezie che lo riguardavano. Decisero infine di incatenarlo per impedirgli di nuocere.
+          Gli Æsir forgiarono allora una catena resistentissima, che chiamarono Lǿðingr. Ma come avvicinare Fenrir il tempo necessario per poterlo legare?
+          Urgeva uno stratagemma. Così mostrarono apertamente al lupo la catena e gli proposero, per sfida, di provare la sua forza contro di essa. Il lupo
+          osservò la catena e non gli parve al di là delle proprie forze. Si lasciò legare. Poi, con un minimo sforzo, spezzò Lǿðingr e si liberò.
+          Ma gli Æsir non si diedero per vinti. Forgiarono una seconda catena, più resistente della prima, e la chiamarono Drómi. La portarono al lupo, proponendogli
+          di provarla, e dissero che avrebbe avuto grande fama se avesse dimostrato di potersi liberare anche da una catena fatta con tanta maestria.
+          Fenrir la annusò. Gli parve piuttosto resistente, ma era anche vero che la sua forza era assai cresciuta da quando aveva spezzato Lǿðingr. Del resto,
+          rifletté, non si otteneva alcuna fama senza affrontare i pericoli. Si lasciò incatenare. Poi si scosse, scalciò, si agitò e i frammenti della catena
+          volarono intorno. Così, fuggì da Drómi.
+          Da allora esiste il detto «liberarsi di Lǿðingr» o «sfuggire da Drómi» per dire che ci si libera da qualcosa di eccessivamente gravoso.
+          Dopo questi fatti, gli Æsir temettero che non esistesse un modo per legare Fenrir. Óðinn mandò allora Skírnir, il messaggero di Freyr, giù nello
+          Svartálfaheimr, presso certi abilissimi nani, perché forgiassero una nuova catena. Questi gli consegnarono un laccio chiamato Gleipnir. Era sottile e morbido
+          come un nastro di seta, ma pressoché impossibile da spezzare. Era fatto di sei cose: rumore di gatto, barba di donna, radice di roccia, tendini d'orso,
+          respiro di pesce e latte (o saliva) di uccello. Ed è infatti questa la ragione per cui, da quel giorno, alla donne non crebbe più la barba, il balzo del gatto
+          non fece più alcun suono e non vi furono più radici sotto le rocce.
+          Quando Gleipnir fu portato agli Æsir, essi ringraziarono Skírnir per il suo servigio. Poi si recarono al lago Ámsvartnir, sull'isolotto di Lyngvi, e,
+          convocato Fenrir, gli mostrarono il laccio e gli proposero di provare a spezzarlo, avvertendolo che era assai più resistente di quanto non apparisse dalle
+          suo aspetto. Gli dèi se lo passarono l'un l'altro, provandolo con la forza delle proprie mani, ed esso non si strappò. Si dissero tuttavia sicuri che il lupo
+          vi sarebbe riuscito senza sforzo.
+
+          — Non otterrò alcuna gloria facendo a pezzi un laccio così sottile — considerò Fenrir. — Ma se è resistente come dite, allora vuol dire che è fatto con
+          malizia e inganni, e non legherà mai le mie zampe.
+
+          — Spezzare questo nastro di seta sarà uno scherzo, per te che sei riuscito a frantumare robuste catene di ferro! — risposero gli Æsir. — Ma non temere.
+          Se non riuscirai a liberarti da una striscia così sottile, non ci farai più alcuna paura, e quindi ti libereremo.
+
+          — Io credo che, se non riuscissi a liberarmi, passerebbe molto tempo prima che veniate in mio soccorso — disse il lupo. — Sono contrario a essere
+          legato con questo nastro. Tuttavia non mi sono mai tirato indietro di fronte a una sfida. Piuttosto, invece di sfidare il mio coraggio, ché qualcuno di voi
+          metta la sua mano nelle mie fauci a garanzia che tutto ciò sia fatto senza alcun inganno.
+
+          Gli Æsir si guardarono l'un l'altro, e nessuno voleva assecondare la richiesta di Fenrir. Ma poi avanzò Týr e stese coraggiosamente la mano destra
+          tra i denti del lupo. Fenrir venne legato e cominciò a cimentarsi. Ma più forte si scrollava e scalciava, più forte Gleipnir si stringeva attorno
+          al suo corpo, finché il lupo venne ridotto all'impotenza. Allora tutti gli dèi risero. Tranne Týr, che perse la mano.
+          Quando gli Æsir si avvidero che Fenrir era completamente immobilizzato, presero la corda che spuntava dal nastro, chiamata Gelgja, e la legarono attorno
+          a un pesante macigno, detto Gjǫll, che stava piantato nel suolo. Poi presero una grossa pietra, chiamata Þviti, e la utilizzarono come picchetto, conficcando
+          il macigno nelle profondità della terra. Durante tutta l'operazione, il lupo spalancava le fauci, tentando di azzannarli. Perciò gli dèi gli infilarono
+          in bocca una spada, con l'elsa contro la mascella inferiore e la punta contro il palato, costringendolo a tenere le fauci spalancate. Quindi se ne andarono
+          e lo lasciarono lì.
+          Da allora, Fenrir ulula orribilmente e dalla sua bocca esce un rivolo di bava mista a sangue, che scorre lontano e forma il fiume Ván. Egli resterà così fino
+          al ragnarǫk.
+        </p>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="fairytale.js"> </script>
   </body>
 
 </html>

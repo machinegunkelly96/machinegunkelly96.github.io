@@ -1,25 +1,37 @@
-let counter = 0;
+let isPrinted = false;
+let container = document.getElementById("story-container");
+let button = document.getElementsByClassName("btn-secondary");
 
-function read() {
-
-	if (counter == 0) {
-		/*let para = document.createElement("p");
-		let node = document.createTextNode("This is a new paragraph");
-		para.appendChild(node);*/
-		let frame = document.createElement("iframe");
-		frame.setAttribute("src", "Mimir.html");
-		frame.style.border = "none";
-		frame.style.width = "inherit";
-		frame.style.height = "auto";
-		frame.style.marginTop = "50em";
-		let element = document.getElementById("main");
-		element.appendChild(frame);
-		counter++;
-	} else {
-		frame.remove();
-		counter = 0;
+function read(e) {
+	if (isPrinted == false) {
+		switch (e) {
+			case 1:
+				var element = document.getElementById("story1");
+				var elementClone = element.cloneNode(true);
+				elementClone.classList.add("clone");
+				break;
+			case 2:
+				var element = document.getElementById("story2");
+				var elementClone = element.cloneNode(true);
+				elementClone.classList.add("clone");
+				break;
+			case 3:
+				var element = document.getElementById("story3");
+				var elementClone = element.cloneNode(true);
+				elementClone.classList.add("clone");
+			default:
+				break;
+		}
+		button[0].insertAdjacentElement("beforebegin", elementClone);
+		button[0].style.visibility = "visible";
+		isPrinted = true;
 	}
-	//else if (e == 2)
-	//	document.getElementbyId("frame").src = "mjolnir.html";
+}
+
+function close1() {
+	var element = document.getElementsByClassName("clone");
+	container.removeChild(element[0]);
+	isPrinted = false;
+	button[0].style.visibility = "hidden";
 
 }
