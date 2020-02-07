@@ -1,8 +1,9 @@
-let isPrinted = false;
-let container = document.getElementById("story-container");
-let button = document.getElementsByClassName("btn-secondary");
+let isPrinted = false; //is the story printed ?
+let container = document.getElementById("story-container"); // <div> that contains the story we want to print.
+let button = document.getElementsByClassName("btn-secondary"); //button to close the story.
 
 function read(e) {
+	//Prints the targetted story .
 	if (isPrinted == false) {
 		switch (e) {
 			case 1:
@@ -29,6 +30,7 @@ function read(e) {
 }
 
 function close1() {
+	//Elimante the story.
 	var element = document.getElementsByClassName("clone");
 	container.removeChild(element[0]);
 	isPrinted = false;
